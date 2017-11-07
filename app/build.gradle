@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.zhihaoliang.basicframe"
         minSdkVersion 15
@@ -45,6 +45,11 @@ dependencies {
 
     compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
     compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile("com.github.hotchemi:permissionsdispatcher:3.0.1") {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
     compile 'org.greenrobot:greendao:3.2.2'
     compile 'com.squareup.retrofit2:converter-scalars:2.2.0'
     //图片预览的支持
