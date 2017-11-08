@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_frist_title_height"
+            android:background="@mipmap/ic_m_frist_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20.0dip"
+            android:text="@string/avk"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/hu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/bok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="14.0dip"
+            android:textSize="13.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="14.0dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/bol"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/aoe"
+                android:layout_marginRight="3.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/so"
+                android:text="@string/ave"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@id/bom"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/aoe"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/sp"
+                android:text="@string/avd"
+                android:textColor="@color/jz"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hu"
+        android:layout_below="@id/a5l">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:text="@string/avg"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="16.0dip"
+                android:gravity="left"
+                android:lines="7"
+                android:text="@string/avh"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
